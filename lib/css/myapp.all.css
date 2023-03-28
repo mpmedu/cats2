@@ -1,0 +1,514 @@
+/* PROJECTS: All
+##############################################
+          General styles
+##############################################
+ */
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 800px;
+
+}
+
+body,
+div,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+
+body {
+  position: relative;
+  /* font: 0.8em Arial, Helvetica, sans-serif; */
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font: 0.9em 'Times New Roman', Times, serif; */
+  /* font: 1em 'Times New Roman', Times, serif; */
+  font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  /* font-size: 1em; */
+  /* min-height: 100%; */
+}
+
+#debug {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: 0.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nodisplay_important {
+  display: none !important;
+}
+
+.nodisplay {
+  display: none;
+}
+
+input,
+body {
+  /* Prevents text from being selected */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.textinputXXX {
+  color: black;
+  width: 95%;
+  /* font-family: Cambria, "Times New Roman", Times, serif; */
+  font-family: Arial, sans-serif;
+  /* font-size: 1.05em; */
+  /* font-size: 1em; */
+  font-size: 0.9em;
+  /* border: 1px solid #666; */
+  padding-left: 3px;
+}
+
+#dialogBox input[type='text'], 
+#dialogBox input[type='file'],
+#dialogBox textarea
+{
+  /* color: black; */
+  width: 95%;
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  border: 1px solid #666;
+  padding-left: 3px;
+}
+
+#dialogBox input[type='file']{
+  border-width: 0;
+  padding:0;
+  background-color: #ffd;
+}
+
+.inputBlock{
+  margin:8px 12px;
+}
+
+input[readonly="true"] {
+  background-color: #ffd;
+}
+
+#dialogBox textarea{
+  margin:0;
+}
+
+
+#bodymask {
+  z-index: 5000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/* 
+   the box class is needed for startupbox, myExplorer, unlockbox, creatorloginbox, getqnakeybox, adminbox,
+    msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
+*/
+
+/* .box {
+  border: 2px solid black;
+  position: absolute;
+  z-index: 600;
+  padding: 1em 2em;
+  background-color: #ddd;
+  box-shadow: 0px 0px 6px 3px #222;
+  -moz-box-shadow: 0px 0px 6px 3px #222;
+  -webkit-box-shadow: 0px 0px 6px 3px #222;
+  text-align: center;
+} */
+
+
+
+/* PROJECTS: edu
+##############################################
+          Content
+##############################################
+ */
+
+
+#wrapper {
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  background: white;
+  position: relative;
+  box-sizing: border-box;
+  top: 82px;
+  /* border: 2px solid blue;
+  border: 2px solid #08f; */
+  z-index: 30;
+}
+
+#wrappermask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 25;
+  left: 0;
+  right: 0;
+}
+
+#content {
+  margin-left: 21%;
+  height: 100%;
+}
+
+#startup {
+  padding: 20px;
+}
+
+
+/*
+##############################################
+          Audio volume slider
+##############################################
+ */
+
+.roundCorners {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -khtml-border-radius: 10px;
+  /* for old Konqueror browsers */
+}
+
+#cont {
+  position: relative;
+  width: 100px;
+  height: 12px;
+  padding: 1px;
+  border: 2px solid #888;
+  background-color: white;
+}
+
+#ball {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #1b1b1b;
+}
+
+.cont_class {
+  position: relative;
+  width: 80px;
+  height: 12px;
+  padding: 1px;
+  border: 2px solid #888;
+  background-color: white;
+}
+
+.ball_class {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #1b1b1b;
+}
+
+/**** Styles for the box for getting the settings for the audio volumes */
+.outer_sd {
+  width: 245px;
+  height: 2.5em;
+  position: relative;
+}
+
+.inner_sd {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+}
+
+/* Audio volume slider.  END 
+   XXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+/* edu styles 
+   ======================================= */
+
+
+#topdiv {
+  position: fixed;
+  width: 100%;
+  z-index: 700;
+  border-bottom: 2px solid #04d;
+  /* background-color: #222; */
+  background-color: #000;
+  height: 80px;
+}
+
+/*  title, TestU, and the subject/pageName */
+
+#topdiv #siteName {
+  color: white;
+  /* text-shadow: 2px 2px 0px rgb(54, 228, 54);
+  text-shadow: 1px 1px 0px rgb(54, 228, 54); */
+  text-shadow: 2px 1px 0px rgb(54, 228, 54);
+  text-shadow: 2px 1px 0px #09f;
+  left: -20000px;
+  font: 3.5em Cambria, 'Times New Roman', serif;
+  /* font: 3.0em Cambria, 'Times New Roman', serif; */
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+  position: absolute;
+  /* padding-top: 10px; */
+  /* z-index: 20; */
+}
+
+#topdiv #pageName {
+  text-shadow: 1px 1px 0px white;
+  font: 2.5em Cambria, 'Times New Roman', serif;
+  font: 2.0em Cambria, 'Times New Roman', serif;
+  font: 1.5em Cambria, 'Times New Roman', serif;
+  font-weight: bold;
+  /* margin: 0 15px; */
+  margin: 0 1%;
+  margin-top: 37px;
+  position: absolute;
+  color: #bbb;
+  /* padding-top: 23px; */
+  padding-right: 10px;
+  padding:0 10px;
+  white-space: nowrap;
+  /* overflow: auto; */
+}
+
+#topmenucontainer {
+  margin-top: 30px;
+  background-color: #222;
+  position: absolute;
+}
+
+
+#debug {
+  background-color: #1b1b1b;
+  font: 0.5em Cambria, 'Times New Roman', serif;
+  position: absolute;
+  color: #cb4;
+  /* z-index: 130; */
+}
+
+/* menu items in topdiv */
+
+#topmenumask {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 750;
+}
+
+
+#topdiv #theMenu {
+  list-style: none;
+  position: relative;
+  background-color: #000;
+}
+
+#topdiv .menu {
+  /* font: 12px/16px Geneva, Arial, "Helvetica Neue", Helvetica, Cambria, sans-serif; */
+  font: 0.9em Cambria, sans-serif;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: #ddd;
+  color: #ccc;
+  border: 1px solid white;
+  /* z-index: 12; */
+  padding: 6px 11px;
+  padding: 4px 11px;
+}
+
+#topdiv .menu:hover,
+#topdiv #theMenu .chosen:hover,
+.submenu:hover,
+.aSubmenu .chosen:hover {
+  /* color: white; */
+  color: #eee;
+  background-color: #04d;
+}
+
+/* for submenus */
+#topdiv ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  left: -1px;
+  width: 120px;
+  /* default width of dropdown menu */
+  -webkit-box-shadow: 0px 1px 2px 1px #555;
+  -moz-box-shadow: 0px 1px 2px 1px #555;
+  box-shadow: 0px 1px 2px 1px #555;
+  /* border-top: 1px solid rgb(39, 161, 14);
+  border-right: 1px solid rgb(39, 161, 14); */
+  border: 1px solid #eee;
+  z-index: 3000;
+  background-color: #222;
+}
+
+#topdiv ul li ul.ul_4 {
+  /* this is for the Admin menu??  */
+  /* width: 150px; */
+}
+
+#topdiv ul li ul li {
+  display: block;
+  float: none;
+  /* z-index: 100; */
+  padding: 0.3em;
+}
+
+#topdiv ul li:hover ul {
+  display: block;
+}
+
+#topdiv #theMenu .chosen,
+.aSubmenu .chosen {
+  background-color: #07e;
+  color: white;
+  /* color:yellow; */
+}
+
+/* #topdiv #theMenu .chosen:hover {
+  background-color: #04d;
+  color:white;
+} */
+
+
+/* Content
+   ========================================================================== */
+
+#bottomdiv {
+  background-color: #222;
+  background-color: #000;
+  color: #eee;
+  padding: 1px 10px;
+  border-top: 2px solid #04d;
+  position: relative;
+  top: 82px;
+  z-index: 30;
+}
+
+#fixed_sidebar {
+  position: fixed;
+  position: absolute;
+  /* display:block; */
+  left: 0;
+  width: 21%;
+  background-color: #222;
+  /* overflow-y: auto; */
+  /* overflow-y:scroll; */
+  /* overflow-y:visible; */
+  overflow-y:hidden;
+
+  overflow-x: hidden;
+  /* overflow-x: visible; */
+  /* overflow-x: auto; */
+  overflow: hidden;
+
+  border-right: 2px solid #777;
+  top:82px;
+  top:0;
+  bottom:55px;
+  /* height: 100%; */
+}
+
+#content {
+  background-color: #222;
+  color: #ddd
+}
+
+
+#col2 {
+  height: 100%;
+  /* height: auto; */
+  position: relative;
+}
+
+#col2mask {
+  height: 100%;
+  width:100%;
+  /* height: auto; */
+  position: relative;
+  position: absolute;
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(100, 100, 100, 0.8);
+  background-color: rgba(50, 50, 50, 0.6);
+
+}
+
+/* styles for showing the information at start, ie startupbox - also used for the unlockbox
+ ==============================================*/
+.boxHead1_class {
+  padding: 0.2em 0;
+  font: 1.2em Cambria, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.boxContent1_class {
+  font: 1.1em Cambria, 'Times New Roman', serif;
+  width: 570px;
+}
+
+
+/* style for showing the information at start 
+ ==============================================*/
+.info_class {
+  display: inline-block;
+  margin: 0 6% 0.5em 3em;
+  padding: 0.2em 0;
+  font: 1.2em Cambria, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content_class {
+  margin: -0.6em 6% 0.5em 3em;
+  padding: 0 0.5em;
+  font: 1.1em Cambria, 'Times New Roman', serif;
+  width: 530px;
+}
+
+.contact_class {
+  margin-left: 1.5em;
+}
+
+
+/* style for flashbox
+====================== */
+/* #flashbox {
+  z-index: 10000;
+  width: auto;
+  text-align: center;
+} */
+
