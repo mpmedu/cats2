@@ -28,8 +28,10 @@ body {
   /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font: 0.9em 'Times New Roman', Times, serif; */
   /* font: 1em 'Times New Roman', Times, serif; */
+  font: 1rem Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font: 0.95em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 
   /* font-size: 1em; */
   /* min-height: 100%; */
@@ -416,7 +418,7 @@ input[readonly="true"] {
   z-index: 30;
 }
 
-#fixed_sidebar {
+#sidebar {
   position: fixed;
   position: absolute;
   /* display:block; */

@@ -8,7 +8,7 @@
   display:inline-block;
 } */
 
-#col1Heading {
+#sidebarHeading {
   color: #eee;
   margin: 0.2em 0;
   padding: 0.1em 0;
@@ -60,7 +60,7 @@
 
 #dialogBox .h2_m {
   padding: 0.4em 0;
-  margin:0;
+  margin: 0;
 }
 
 #catlistdiv div.items {
@@ -92,32 +92,32 @@
   text-align: center;
 }
 
-#catlistdiv .itemName, #catPopup {
+#catlistdiv .itemName,
+#catPopup {
   font: 0.8em Arial, sans-serif;
 
   /* padding-left: 3px; */
   /* padding-right: 3px; */
   padding: 0 3px;
   white-space: nowrap;
-  margin:0;
+  margin: 0;
 }
 
 #catPopup {
   position: absolute;
   text-decoration: underline;
   background-color: #222;
-  color:#ddd;
+  color: #ddd;
   z-index: 50;
 }
 
-.catchosen{
+.catchosen {
   background-color: #037 !important;
   color: white !important;
 }
 
-#col1{
-  position:relative;
-  overflow:hidden;
+.hidden_1,.hidden_2,.hidden_3,.hidden_4,.hidden_5{
+  display:none;
 }
 
 /**** Styles for the box for adding/editing the categories */
@@ -149,7 +149,7 @@ ul.ul_style li {
   background-color: #ddd !important;
 }
 
-#editButtons{
+#editButtons {
   margin-top: 10px;
   text-align: center;
 }
@@ -175,17 +175,35 @@ ul.ul_style li {
   width: 160px;
 }
 
-/* .makeVisible{
-  overflow-x:visible;
+/* PROJECTS: Categories
+##############################################
+          for display of photos
+##############################################
+ */
+
+ #col2{
+  padding:5px;
+ }
+
+.photoClass {
+  padding: 3px;
+  background-color: #444;
+  border:1px solid white;
+  margin:15px 5px;
+  float: left;
+  display: table-cell;
+
 }
 
-#fixed_sidebar,
-#col1,
-#catlistdiv,
-.subcatlistdiv,
-.alllevels,
-.items
-.itemName{
-  position:relative;
-  z-index: 10000;;
-} */
+.iClass {
+  height: 70px;
+  /* width: 40px; */
+  display: table-cell;
+
+}
+
+.photoTitle{
+  font-size: 0.8em;
+  font-size: 0.8rem;
+  display: table-cell;
+}
