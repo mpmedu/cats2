@@ -37,6 +37,10 @@ button {
   display: none;
 }
 
+.yesdisplay_important {
+  display: inline-block !important;
+}
+
 input,
 body {
   /* Prevents text from being selected */
@@ -54,9 +58,15 @@ body {
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-/* hr{
-  margin:0;
-} */
+
+hr {
+  border: none;
+  height: 1px;
+  color: #888;
+  /* old IE */
+  background-color: #888;
+  /* Modern Browsers */
+}
 
 
 /*    
@@ -81,7 +91,7 @@ body {
    the box and mask for messages and yesno
 ##############################################
  */
- #msgbox {
+#msgbox {
   /* for messages and yes/no box */
   z-index: 4000;
   text-align: center;
@@ -127,29 +137,38 @@ body {
 }
 
 
-#contextPopup {
+#contextPopup,
+#contextPopup .sub {
   border: 2px solid #eee;
+  border: 1px solid #eee;
   position: absolute;
   position: fixed;
   z-index: 700;
   background-color: #222;
-  color:#ddd;
+  color: #ddd;
 }
 
-#contextPopup p {
+#contextPopup>div,
+#contextPopup .sub>div {
   margin: 0.2em;
   padding: 0.1em 0.8em;
   font-size: 0.9em;
   font-size: 0.9rem;
-
+  white-space: nowrap;
 }
 
-#contextPopup p:hover {
-  background-color:#888;
-  color:white;
+#contextPopup>div:hover,
+#contextPopup .sub>div:hover {
+  background-color: #444;
+  color: white;
 }
 
-#dialogBox {
+#contextPopup .hasSub {
+  /* position:relative; */
+}
+
+
+#formDialog {
   border: 2px solid black;
   position: absolute;
   /* position: fixed; */
@@ -159,19 +178,80 @@ body {
   box-shadow: 0px 0px 6px 3px #fff;
   -moz-box-shadow: 0px 0px 6px 3px #fff;
   -webkit-box-shadow: 0px 0px 6px 3px #fff;
-  width:80%;
+  width: 80%;
   top: 100px;
   left: 100px;
 }
 
-#dialogmask {
+#formDialogMask {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: rgba(80, 80, 80, 0.4);
+  background-color: red;
   z-index: 550;
+}
+
+#pictureDialog {
+  border: 2px solid black;
+  position: fixed;
+  z-index: 800;
+  padding: 1rem 2rem;
+  padding: 1rem 0;
+  padding: 0.5rem 0;
+  padding: 0 0;
+  background-color: #ddd;
+  box-shadow: 0px 0px 6px 3px #fff;
+  -moz-box-shadow: 0px 0px 6px 3px #fff;
+  -webkit-box-shadow: 0px 0px 6px 3px #fff;
+  /* margin:auto; */
+}
+
+#pictureDialogMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 750;
+}
+
+.pictureContainer {
+  display: flex;
+  align-items: center;
+}
+
+.pictureHolder {
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pictureHolder img {
+  padding:1px;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+
+.photoTitle, .photoDescription{
+  height: 16px;
+  max-height: 16px;
+  min-height: 16px;
+  white-space:nowrap;
+}
+
+.beforenext {
+  height:100%;
+  display:flex;
+  align-items: center;
+  padding :0 6px;
+  font-size: 2.5rem;
 }
 
 /* 
@@ -180,7 +260,7 @@ Styles for message which displays while the DOM is loading.
 ---------------------------
  */
 
- #eggDiv {
+#eggDiv {
   display: flex;
   align-items: center;
   justify-content: center;

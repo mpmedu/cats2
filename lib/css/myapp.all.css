@@ -88,10 +88,9 @@ body {
   padding-left: 3px;
 }
 
-#dialogBox input[type='text'], 
-#dialogBox input[type='file'],
-#dialogBox textarea
-{
+#formDialog input[type='text'],
+#formDialog input[type='file'],
+#formDialog textarea {
   /* color: black; */
   width: 95%;
   font-family: Arial, sans-serif;
@@ -100,22 +99,22 @@ body {
   padding-left: 3px;
 }
 
-#dialogBox input[type='file']{
+#formDialog input[type='file'] {
   border-width: 0;
-  padding:0;
+  padding: 0;
   background-color: #ffd;
 }
 
-.inputBlock{
-  margin:8px 12px;
+.inputBlock {
+  margin: 8px 12px;
 }
 
 input[readonly="true"] {
   background-color: #ffd;
 }
 
-#dialogBox textarea{
-  margin:0;
+#formDialog textarea {
+  margin: 0;
 }
 
 
@@ -156,12 +155,13 @@ input[readonly="true"] {
 
 
 #wrapper {
+  display: flex;
   /* overflow: hidden; */
   /* overflow: scroll; */
   background: white;
   position: relative;
   box-sizing: border-box;
-  top: 82px;
+  /* top: 82px; */
   /* border: 2px solid blue;
   border: 2px solid #08f; */
   z-index: 30;
@@ -179,6 +179,7 @@ input[readonly="true"] {
 }
 
 #content {
+  flex-grow: 1;
   margin-left: 21%;
   height: 100%;
 }
@@ -258,7 +259,8 @@ input[readonly="true"] {
 
 
 #topdiv {
-  position: fixed;
+  /* position: fixed; */
+  /* position: sticky; */
   width: 100%;
   z-index: 700;
   border-bottom: 2px solid #04d;
@@ -299,7 +301,7 @@ input[readonly="true"] {
   color: #bbb;
   /* padding-top: 23px; */
   padding-right: 10px;
-  padding:0 10px;
+  padding: 0 10px;
   white-space: nowrap;
   /* overflow: auto; */
 }
@@ -414,32 +416,19 @@ input[readonly="true"] {
   padding: 1px 10px;
   border-top: 2px solid #04d;
   position: relative;
-  top: 82px;
+  /* top: 82px; */
   z-index: 30;
 }
 
 #sidebar {
-  position: fixed;
   position: absolute;
-  /* display:block; */
+  top: 0;
   left: 0;
+  height: 100%;
   width: 21%;
   background-color: #222;
-  /* overflow-y: auto; */
-  /* overflow-y:scroll; */
-  /* overflow-y:visible; */
-  overflow-y:hidden;
-
-  overflow-x: hidden;
-  /* overflow-x: visible; */
-  /* overflow-x: auto; */
   overflow: hidden;
-
   border-right: 2px solid #777;
-  top:82px;
-  top:0;
-  bottom:55px;
-  /* height: 100%; */
 }
 
 #content {
@@ -447,16 +436,9 @@ input[readonly="true"] {
   color: #ddd
 }
 
-
-#col2 {
+#contentMask {
   height: 100%;
-  /* height: auto; */
-  position: relative;
-}
-
-#col2mask {
-  height: 100%;
-  width:100%;
+  width: 79%;
   /* height: auto; */
   position: relative;
   position: absolute;
@@ -513,4 +495,3 @@ input[readonly="true"] {
   width: auto;
   text-align: center;
 } */
-

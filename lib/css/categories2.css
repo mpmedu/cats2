@@ -58,13 +58,12 @@
   margin-left: 10px;
 }
 
-#dialogBox .h2_m {
+#formDialog .h2_m {
   padding: 0.4em 0;
   margin: 0;
 }
 
 #catlistdiv div.items {
-
   margin-bottom: -1px;
   padding: 3px 8px 3px 0px;
   position: relative;
@@ -95,7 +94,6 @@
 #catlistdiv .itemName,
 #catPopup {
   font: 0.8em Arial, sans-serif;
-
   /* padding-left: 3px; */
   /* padding-right: 3px; */
   padding: 0 3px;
@@ -117,7 +115,7 @@
 }
 
 .hidden_1,.hidden_2,.hidden_3,.hidden_4,.hidden_5{
-  display:none;
+  /* display:none; */
 }
 
 /**** Styles for the box for adding/editing the categories */
@@ -181,29 +179,54 @@ ul.ul_style li {
 ##############################################
  */
 
- #col2{
-  padding:5px;
- }
+.thumbHolder {
+  height: 176px;
+  width: 130px;
 
-.photoClass {
   padding: 3px;
   background-color: #444;
   border:1px solid white;
   margin:15px 5px;
   float: left;
-  display: table-cell;
-
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  /* display: table-cell; */
 }
 
-.iClass {
-  height: 70px;
-  /* width: 40px; */
-  display: table-cell;
-
+.icClass {
+  /* height: 156px;
+  width: 126px; */
+  /* display: table-cell; */
 }
 
-.photoTitle{
+/* .iClass {
+  height: 170px;
+  width: 140px;
+  display: table-cell;
+} */
+
+.photoTitle, .photoDescription{
   font-size: 0.8em;
   font-size: 0.8rem;
-  display: table-cell;
+  padding:3px;
+}
+
+.pictureHolder > span{
+  font-size: 1rem;
+}
+
+.levelName {
+  display: inline-block;
+  width: 160px;
+  padding-left: 6px;
+  padding-bottom: 1px;
+}
+
+.hiddenCheckbox {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+
 }
