@@ -6,6 +6,7 @@
 
 html,
 body {
+  font-size: 16px;
   min-height: 100vh;
   min-width: 800px;
 
@@ -23,6 +24,8 @@ p {
 
 body {
   position: relative;
+  display:flex;
+  flex-direction: column;
   /* font: 0.8em Arial, Helvetica, sans-serif; */
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
@@ -155,6 +158,7 @@ input[readonly="true"] {
 
 
 #wrapper {
+  flex-grow: 1;
   display: flex;
   /* overflow: hidden; */
   /* overflow: scroll; */
@@ -180,7 +184,7 @@ input[readonly="true"] {
 
 #content {
   flex-grow: 1;
-  margin-left: 21%;
+  /* margin-left: 21%; */
   height: 100%;
 }
 
@@ -421,33 +425,41 @@ input[readonly="true"] {
 }
 
 #sidebar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 21%;
+  /* position: absolute; */
+  /* flex-grow: 1; */
+  /* top: 0;
+  left: 0; */
+  /* height: 100%; */
+  /* width: 20%; */
+  flex-basis: 20%;
   background-color: #222;
   overflow: hidden;
   border-right: 2px solid #777;
 }
 
-#content {
+#showArea{
+  /* flex-grow: 4; */
+  flex-grow: 1;
+  position: relative;
+  /* height: auto; */
   background-color: #222;
-  color: #ddd
+
 }
 
-#contentMask {
+#content {
+  background-color: #222;
+  color: #ddd;
+  color: #fff;
+}
+
+/* #contentMask {
   height: 100%;
-  width: 79%;
-  /* height: auto; */
   position: relative;
-  position: absolute;
   background-color: red;
   background-color: rgba(255, 0, 0, 0.1);
   background-color: rgba(100, 100, 100, 0.8);
   background-color: rgba(50, 50, 50, 0.6);
-
-}
+} */
 
 /* styles for showing the information at start, ie startupbox - also used for the unlockbox
  ==============================================*/
