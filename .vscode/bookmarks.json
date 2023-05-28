@@ -1,0 +1,174 @@
+{
+	"files": [
+		{
+			"path": "lib/css/cats2.css",
+			"bookmarks": [
+				{
+					"line": 217,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 336,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 433,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 539,
+					"column": 6,
+					"label": ""
+				},
+				{
+					"line": 747,
+					"column": 6,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/myapp.js",
+			"bookmarks": [
+				{
+					"line": 401,
+					"column": 14,
+					"label": ""
+				},
+				{
+					"line": 469,
+					"column": 12,
+					"label": ""
+				},
+				{
+					"line": 891,
+					"column": 14,
+					"label": ""
+				},
+				{
+					"line": 1131,
+					"column": 15,
+					"label": ""
+				},
+				{
+					"line": 1250,
+					"column": 12,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/handlers.js",
+			"bookmarks": [
+				{
+					"line": 20,
+					"column": 11,
+					"label": ""
+				},
+				{
+					"line": 55,
+					"column": 14,
+					"label": ""
+				},
+				{
+					"line": 129,
+					"column": 9,
+					"label": "sidebar"
+				},
+				{
+					"line": 257,
+					"column": 13,
+					"label": "formDialog"
+				},
+				{
+					"line": 363,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 412,
+					"column": 17,
+					"label": ""
+				},
+				{
+					"line": 551,
+					"column": 16,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/hc_photos.js",
+			"bookmarks": [
+				{
+					"line": 14,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 59,
+					"column": 10,
+					"label": ""
+				},
+				{
+					"line": 88,
+					"column": 12,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/hc_categories2.js",
+			"bookmarks": [
+				{
+					"line": 10,
+					"column": 9,
+					"label": ""
+				},
+				{
+					"line": 51,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 84,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 116,
+					"column": 10,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/php/pCatClass.php",
+			"bookmarks": [
+				{
+					"line": 79,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 379,
+					"column": 21,
+					"label": ""
+				},
+				{
+					"line": 487,
+					"column": 25,
+					"label": ""
+				},
+				{
+					"line": 612,
+					"column": 6,
+					"label": ""
+				}
+			]
+		}
+	]
+}

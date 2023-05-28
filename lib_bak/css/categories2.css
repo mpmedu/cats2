@@ -15,40 +15,11 @@
 }
 
 #catlistdiv {
-  /* font: 1.0em cambria; */
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-family: 'Courier New', Courier, monospace;
-  font-family: Courier, monospace;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  font-family:Verdana, Geneva, Tahoma, sans-serif; */
-  /* font-family:Georgia, 'Times New Roman', Times, serif; */
-  /* font-family:'Times New Roman', Times, serif; */
-  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-family: Georgia, Times, 'Times New Roman', serif;
   font-family: Arial, sans-serif;
-  /* font: 0.8em Arial, sans-serif; */
-  /* font-weight: lighter;
-  font-weight: 100;
-  font-weight: normal; */
-  /* font-weight: bold; */
-  /* font-size: 1em;
-  font-size: 1.4em;
-  font-size: 1.3em;
-  font-size: 1.2em;
-  font-size: 1.1em; */
-
-  line-height: 16px;
-  /* line-height: 12px; */
-  /* line-height: 14px; */
   line-height: 15px;
   margin: 0 5% 10px 4%;
   position: relative;
   width: 90%;
-  /* background-color: #444; */
-  color: rgb(105, 170, 170);
   color: #ddd;
 }
 
@@ -56,11 +27,6 @@
   width: 100%;
   position: relative;
   margin-left: 10px;
-}
-
-#formDialog .h2_m {
-  padding: 0.4em 0;
-  margin: 0;
 }
 
 #catlistdiv div.items {

@@ -8,17 +8,24 @@ html,
 body {
   font-size: 16px;
   min-height: 100vh;
-  min-width: 800px;
+  min-width: 600px;
 
 }
 
-body,
+/* body,
 div,
 ul,
 p {
   margin: 0;
   padding: 0;
   cursor: default;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  box-sizing: border-box;
 }
 
 
@@ -26,18 +33,7 @@ body {
   position: relative;
   display:flex;
   flex-direction: column;
-  /* font: 0.8em Arial, Helvetica, sans-serif; */
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  /* font: 0.9em 'Times New Roman', Times, serif; */
-  /* font: 1em 'Times New Roman', Times, serif; */
-  font: 1rem Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font: 1em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font: 0.95em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  /* font: 0.9em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-
-  /* font-size: 1em; */
-  /* min-height: 100%; */
 }
 
 #debug {
@@ -79,22 +75,9 @@ body {
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-.textinputXXX {
-  color: black;
-  width: 95%;
-  /* font-family: Cambria, "Times New Roman", Times, serif; */
-  font-family: Arial, sans-serif;
-  /* font-size: 1.05em; */
-  /* font-size: 1em; */
-  font-size: 0.9em;
-  /* border: 1px solid #666; */
-  padding-left: 3px;
-}
-
 #formDialog input[type='text'],
 #formDialog input[type='file'],
 #formDialog textarea {
-  /* color: black; */
   width: 95%;
   font-family: Arial, sans-serif;
   font-size: 0.9em;
@@ -160,18 +143,13 @@ input[readonly="true"] {
 #wrapper {
   flex-grow: 1;
   display: flex;
-  /* overflow: hidden; */
-  /* overflow: scroll; */
   background: white;
   position: relative;
   box-sizing: border-box;
-  /* top: 82px; */
-  /* border: 2px solid blue;
-  border: 2px solid #08f; */
   z-index: 30;
 }
 
-#wrappermask {
+/* #wrappermask {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.3);
@@ -180,12 +158,11 @@ input[readonly="true"] {
   z-index: 25;
   left: 0;
   right: 0;
-}
+} */
 
 #content {
   flex-grow: 1;
-  /* margin-left: 21%; */
-  height: 100%;
+  /* height: 100%; */
 }
 
 #startup {
@@ -204,13 +181,12 @@ input[readonly="true"] {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -khtml-border-radius: 10px;
-  /* for old Konqueror browsers */
 }
 
 #cont {
   position: relative;
   width: 100px;
-  height: 12px;
+  height: 18px;
   padding: 1px;
   border: 2px solid #888;
   background-color: white;
@@ -226,7 +202,7 @@ input[readonly="true"] {
 .cont_class {
   position: relative;
   width: 80px;
-  height: 12px;
+  height: 18px;
   padding: 1px;
   border: 2px solid #888;
   background-color: white;
@@ -263,12 +239,9 @@ input[readonly="true"] {
 
 
 #topdiv {
-  /* position: fixed; */
-  /* position: sticky; */
   width: 100%;
   z-index: 700;
   border-bottom: 2px solid #04d;
-  /* background-color: #222; */
   background-color: #000;
   height: 80px;
 }
@@ -277,37 +250,26 @@ input[readonly="true"] {
 
 #topdiv #siteName {
   color: white;
-  /* text-shadow: 2px 2px 0px rgb(54, 228, 54);
-  text-shadow: 1px 1px 0px rgb(54, 228, 54); */
-  text-shadow: 2px 1px 0px rgb(54, 228, 54);
   text-shadow: 2px 1px 0px #09f;
   left: -20000px;
   font: 3.5em Cambria, 'Times New Roman', serif;
-  /* font: 3.0em Cambria, 'Times New Roman', serif; */
   font-weight: bold;
   margin: 0;
   margin-top: 10px;
   position: absolute;
-  /* padding-top: 10px; */
-  /* z-index: 20; */
 }
 
 #topdiv #pageName {
   text-shadow: 1px 1px 0px white;
-  font: 2.5em Cambria, 'Times New Roman', serif;
-  font: 2.0em Cambria, 'Times New Roman', serif;
   font: 1.5em Cambria, 'Times New Roman', serif;
   font-weight: bold;
-  /* margin: 0 15px; */
   margin: 0 1%;
   margin-top: 37px;
   position: absolute;
   color: #bbb;
-  /* padding-top: 23px; */
-  padding-right: 10px;
+  /* padding-right: 10px; */
   padding: 0 10px;
   white-space: nowrap;
-  /* overflow: auto; */
 }
 
 #topmenucontainer {

@@ -2,6 +2,7 @@
 /res
 /lib/css/icon
 /lib/js/myappall.combined.adv.min.js
+/lib_bak/*.*
 *.js
 *.php
 *.jar
